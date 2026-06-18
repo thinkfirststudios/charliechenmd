@@ -982,6 +982,28 @@ p { line-height: 1.75; color: var(--text); font-weight: 400; }
   color: rgba(255,255,255,0.75);
   z-index: 1;
 }
+.placeholder-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  z-index: 1;
+  pointer-events: none;
+}
+.placeholder-center span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  border: 1px dashed rgba(255,255,255,0.25);
+  padding: 0.35rem 0.75rem;
+  border-radius: 2px;
+}
 .selfie-tag {
   font-family: 'Raleway', sans-serif;
   font-size: 0.8rem;
@@ -1934,20 +1956,20 @@ p { line-height: 1.75; color: var(--text); font-weight: 400; }
     <div class="ba-thumbs">
       <div class="ba-pair">
         <div class="ba-pair-imgs">
-          <div class="ba-img"><span>Before</span></div>
-          <div class="ba-img"><span>After</span></div>
+          <div class="ba-img"><div class="placeholder-center"><span>Photo</span></div><span>Before</span></div>
+          <div class="ba-img"><div class="placeholder-center"><span>Photo</span></div><span>After</span></div>
         </div>
       </div>
       <div class="ba-pair">
         <div class="ba-pair-imgs">
-          <div class="ba-img"><span>Before</span></div>
-          <div class="ba-img"><span>After</span></div>
+          <div class="ba-img"><div class="placeholder-center"><span>Photo</span></div><span>Before</span></div>
+          <div class="ba-img"><div class="placeholder-center"><span>Photo</span></div><span>After</span></div>
         </div>
       </div>
       <div class="ba-pair">
         <div class="ba-pair-imgs">
-          <div class="ba-img"><span>Before</span></div>
-          <div class="ba-img"><span>After</span></div>
+          <div class="ba-img"><div class="placeholder-center"><span>Photo</span></div><span>Before</span></div>
+          <div class="ba-img"><div class="placeholder-center"><span>Photo</span></div><span>After</span></div>
         </div>
       </div>
     </div>
@@ -1962,12 +1984,12 @@ p { line-height: 1.75; color: var(--text); font-weight: 400; }
     <div class="gold-rule center"></div>
   </div>
   <div class="selfie-grid">
-    <div class="selfie-tile reveal"><span class="selfie-overlay-label">Breast Augmentation</span></div>
-    <div class="selfie-tile reveal" style="background:linear-gradient(145deg,#b8c0b4 0%,#6a7868 100%);"><span class="selfie-overlay-label">Mommy Makeover</span></div>
-    <div class="selfie-tile reveal" style="background:linear-gradient(145deg,#c0b0b8 0%,#786070 100%);"><span class="selfie-overlay-label">Rhinoplasty</span></div>
-    <div class="selfie-tile reveal" style="background:linear-gradient(145deg,#b0b8c0 0%,#607080 100%);"><span class="selfie-overlay-label">Blepharoplasty</span></div>
-    <div class="selfie-tile reveal" style="background:linear-gradient(145deg,#c8c0a8 0%,#887860 100%);"><span class="selfie-overlay-label">Morpheus8</span></div>
-    <div class="selfie-tile reveal" style="background:linear-gradient(145deg,#b8c0c8 0%,#686878 100%);"><span class="selfie-overlay-label">Tummy Tuck</span></div>
+    <div class="selfie-tile reveal"><div class="placeholder-center"><span>Add Photo</span></div><span class="selfie-overlay-label">Breast Augmentation</span></div>
+    <div class="selfie-tile reveal" style="background:linear-gradient(145deg,#b8c0b4 0%,#6a7868 100%);"><div class="placeholder-center"><span>Add Photo</span></div><span class="selfie-overlay-label">Mommy Makeover</span></div>
+    <div class="selfie-tile reveal" style="background:linear-gradient(145deg,#c0b0b8 0%,#786070 100%);"><div class="placeholder-center"><span>Add Photo</span></div><span class="selfie-overlay-label">Rhinoplasty</span></div>
+    <div class="selfie-tile reveal" style="background:linear-gradient(145deg,#b0b8c0 0%,#607080 100%);"><div class="placeholder-center"><span>Add Photo</span></div><span class="selfie-overlay-label">Blepharoplasty</span></div>
+    <div class="selfie-tile reveal" style="background:linear-gradient(145deg,#c8c0a8 0%,#887860 100%);"><div class="placeholder-center"><span>Add Photo</span></div><span class="selfie-overlay-label">Morpheus8</span></div>
+    <div class="selfie-tile reveal" style="background:linear-gradient(145deg,#b8c0c8 0%,#686878 100%);"><div class="placeholder-center"><span>Add Photo</span></div><span class="selfie-overlay-label">Tummy Tuck</span></div>
   </div>
   <div class="selfie-tag reveal">
     Follow us <a href="https://instagram.com/drcharliechenmd" target="_blank" style="color:var(--gold-dark);font-weight:700;">@drcharliechenmd</a> for more
